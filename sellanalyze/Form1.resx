@@ -1,0 +1,844 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="manthBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 84</value>
+  </data>
+  <data name="manthBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="manthBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;manthBox.Name" xml:space="preserve">
+    <value>manthBox</value>
+  </data>
+  <data name="&gt;&gt;manthBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;manthBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;manthBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="monthlabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="monthlabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 25</value>
+  </data>
+  <data name="monthlabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 43</value>
+  </data>
+  <data name="monthlabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="monthlabel.Text" xml:space="preserve">
+    <value>月の売り上げ</value>
+  </data>
+  <data name="&gt;&gt;monthlabel.Name" xml:space="preserve">
+    <value>monthlabel</value>
+  </data>
+  <data name="&gt;&gt;monthlabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;monthlabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;monthlabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="storeBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>266, 83</value>
+  </data>
+  <data name="storeBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="storeBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;storeBox.Name" xml:space="preserve">
+    <value>storeBox</value>
+  </data>
+  <data name="&gt;&gt;storeBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;storeBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;storeBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="storelabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="storelabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>266, 25</value>
+  </data>
+  <data name="storelabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 29</value>
+  </data>
+  <data name="storelabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="storelabel.Text" xml:space="preserve">
+    <value>店の売り上げ</value>
+  </data>
+  <data name="&gt;&gt;storelabel.Name" xml:space="preserve">
+    <value>storelabel</value>
+  </data>
+  <data name="&gt;&gt;storelabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;storelabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;storelabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="datadrop.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 18pt</value>
+  </data>
+  <data name="datadrop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>465, 25</value>
+  </data>
+  <data name="datadrop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 99</value>
+  </data>
+  <data name="datadrop.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="datadrop.Text" xml:space="preserve">
+    <value>ここにデータを
+ドラックドロップ</value>
+  </data>
+  <data name="&gt;&gt;datadrop.Name" xml:space="preserve">
+    <value>datadrop</value>
+  </data>
+  <data name="&gt;&gt;datadrop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;datadrop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;datadrop.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 166</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="listView1.Items" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkMAwAAAFFTeXN0
+        ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2Vu
+        PWIwM2Y1ZjdmMTFkNTBhM2EFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0l0ZW0LAAAA
+        BFRleHQKSW1hZ2VJbmRleAxTdWJJdGVtQ291bnQIU3ViSXRlbTEIU3ViSXRlbTIIU3ViSXRlbTMJQmFj
+        a0NvbG9yB0NoZWNrZWQERm9udAlGb3JlQ29sb3IXVXNlSXRlbVN0eWxlRm9yU3ViSXRlbXMBAAAEBAQE
+        AAQEAAgIMVN5c3RlbS5XaW5kb3dzLkZvcm1zLkxpc3RWaWV3SXRlbStMaXN0Vmlld1N1Ykl0ZW0CAAAA
+        MVN5c3RlbS5XaW5kb3dzLkZvcm1zLkxpc3RWaWV3SXRlbStMaXN0Vmlld1N1Ykl0ZW0CAAAAMVN5c3Rl
+        bS5XaW5kb3dzLkZvcm1zLkxpc3RWaWV3SXRlbStMaXN0Vmlld1N1Ykl0ZW0CAAAAFFN5c3RlbS5EcmF3
+        aW5nLkNvbG9yAwAAAAETU3lzdGVtLkRyYXdpbmcuRm9udAMAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3ID
+        AAAAAQIAAAAGBAAAAAD/////BAAAAAkFAAAACQYAAAAJBwAAAAX4////FFN5c3RlbS5EcmF3aW5nLkNv
+        bG9yBAAAAARuYW1lBXZhbHVlCmtub3duQ29sb3IFc3RhdGUBAAAACQcHAwAAAAoAAAAAAAAAABgAAQAA
+        CQkAAAAB9v////j///8KAAAAAAAAAAAaAAEAAQUFAAAAMVN5c3RlbS5XaW5kb3dzLkZvcm1zLkxpc3RW
+        aWV3SXRlbStMaXN0Vmlld1N1Ykl0ZW0EAAAABHRleHQEbmFtZQVzdHlsZQh1c2VyRGF0YQEBBAI+U3lz
+        dGVtLldpbmRvd3MuRm9ybXMuTGlzdFZpZXdJdGVtK0xpc3RWaWV3U3ViSXRlbStTdWJJdGVtU3R5bGUC
+        AAAAAgAAAAYLAAAAAWEGDAAAABFMaXN0Vmlld1N1Ykl0ZW0yMgoKAQYAAAAFAAAACgYNAAAAEUxpc3RW
+        aWV3U3ViSXRlbTIzCgoBBwAAAAUAAAAGDgAAAAFiBg8AAAARTGlzdFZpZXdTdWJJdGVtMjQKCgUJAAAA
+        E1N5c3RlbS5EcmF3aW5nLkZvbnQEAAAABE5hbWUEU2l6ZQVTdHlsZQRVbml0AQAEBAsYU3lzdGVtLkRy
+        YXdpbmcuRm9udFN0eWxlAwAAABtTeXN0ZW0uRHJhd2luZy5HcmFwaGljc1VuaXQDAAAAAwAAAAYQAAAA
+        DE1TIFVJIEdvdGhpYwAAEEEF7////xhTeXN0ZW0uRHJhd2luZy5Gb250U3R5bGUBAAAAB3ZhbHVlX18A
+        CAMAAAAAAAAABe7///8bU3lzdGVtLkRyYXdpbmcuR3JhcGhpY3NVbml0AQAAAAd2YWx1ZV9fAAgDAAAA
+        AwAAAAs=
+</value>
+  </data>
+  <data name="listView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>302, 166</value>
+  </data>
+  <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>868, 351</value>
+  </data>
+  <data name="listView1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;listView1.Name" xml:space="preserve">
+    <value>listView1</value>
+  </data>
+  <data name="&gt;&gt;listView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listView1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="伝票no.Text" xml:space="preserve">
+    <value>伝票no</value>
+  </data>
+  <data name="eos伝票.Text" xml:space="preserve">
+    <value>eos伝票</value>
+  </data>
+  <data name="売り上げ区分.Text" xml:space="preserve">
+    <value>売り上げ区分</value>
+  </data>
+  <data name="納品日.Text" xml:space="preserve">
+    <value>納品日</value>
+  </data>
+  <data name="得意先コード.Text" xml:space="preserve">
+    <value>得意先コード</value>
+  </data>
+  <data name="得意先コード２.Text" xml:space="preserve">
+    <value>得意先コード２</value>
+  </data>
+  <data name="は.Text" xml:space="preserve">
+    <value>は</value>
+  </data>
+  <data name="ひ.Text" xml:space="preserve">
+    <value>ひ</value>
+  </data>
+  <data name="空白.Text" xml:space="preserve">
+    <value>空白</value>
+  </data>
+  <data name="ふ.Text" xml:space="preserve">
+    <value>ふ</value>
+  </data>
+  <data name="合計金額.Text" xml:space="preserve">
+    <value>合計金額</value>
+  </data>
+  <data name="売りか合計金額.Text" xml:space="preserve">
+    <value>売りか合計金額</value>
+  </data>
+  <data name="売上合計金額.Text" xml:space="preserve">
+    <value>売上合計金額</value>
+  </data>
+  <data name="消費税.Text" xml:space="preserve">
+    <value>消費税</value>
+  </data>
+  <data name="コメント欄.Text" xml:space="preserve">
+    <value>コメント欄</value>
+  </data>
+  <data name="へ.Text" xml:space="preserve">
+    <value>へ</value>
+  </data>
+  <data name="伝票入力日.Text" xml:space="preserve">
+    <value>伝票入力日</value>
+  </data>
+  <data name="ほ.Text" xml:space="preserve">
+    <value>ほ</value>
+  </data>
+  <data name="わからん.Text" xml:space="preserve">
+    <value>わからん</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 219</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="analabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 282</value>
+  </data>
+  <data name="analabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 280</value>
+  </data>
+  <data name="analabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="analabel.Text" xml:space="preserve">
+    <value>データ分析</value>
+  </data>
+  <data name="&gt;&gt;analabel.Name" xml:space="preserve">
+    <value>analabel</value>
+  </data>
+  <data name="&gt;&gt;analabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;analabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;analabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 15</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1190, 645</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAQEAAAAEAIAAoQgAAFgAAACgAAABAAAAAgAAAAAEAIAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA
+        AAD/////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////7////+///+/f///vz///79///+
+        /f///v3////+////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////v7///79////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////+///+/P///fr///78///+
+        /f/////////////////////////////+/P///fv///36///+/f//////////////////////////////
+        /////////////////////////////////////////////////////vv///79///////++vL///78////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////7///37///9
+        +////////////////////////vnv//z04f/99eT//PXj///9+v///////////////////////v36///+
+        /P/////////////////////////////////////////////////////////////////+/Pn/////////
+        ///zzoX/8sp4//779f/////////+////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////vz//vz4/////////////PTi//ferP/zzX3/8MNi/+67UP/ttkb/7bdH/+23R//vvlj/8MRk//TT
+        jP/55r///v34/////////////vz5/////v//////////////////////////////////////////////
+        /v/+/Pn///////z15P/vv17/6qwx//ferf////7////+////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////+/fn////////////66sj/8MNp/+yyOf/sszr/78Bd//PPgP/115r/992t//bc
+        qf/33av/9NSO//LJcv/uuUv/7LE2/+22Rv/00Yv//fjr/////////fz///78////////////////////
+        /////////////////v///fr///////nmv//qrC3/7rxZ//zz4P////////7+////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////v/+/fr///////zz3f/vv2H/6642//DEaP/44bD//PLc////
+        /v///////////////////////////////////////vrx//rrzP/11pP/7rhM/+utM//00o7/////////
+        /////fv//////////////////////////v///v3///////XWmf/ppiL/9NGH/////////////vz4////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////v////////////XYm//pqCb/8MRq//rs
+        zv////7///////////////////37///9+////fr///36///9+v///fv///78//////////////////35
+        7//3367/7LI+/+yzQv/88tv////////+/P///////////////v///v3///////LMf//ppiP/+OS6////
+        /////v3///77////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////v///v7///////HI
+        dP/ppiL/+OGz///+/f////////7+///9+////vz///7+////////////////////////////////////
+        /v///v3///78///+/P////////////758P/xyHT/6aUg//jjtv////////37/////v///fv///////DD
+        aP/qqin/++/V/////////fv///79////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /v///fv///////DCZ//qrDP//PHa/////////v3///79/////v//////////////////////////////
+        ///////////////////////////////////////////+///+/P////////////bZn//oohv/+OO3////
+        ///++/X///////PPhP/qqin//fbl/////////vv////+////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////fr///////TRjP/qqy///fjq/////////fv/////////////////////////
+        ///////////////////////////////////////////////////////////////////////////+///+
+        /P//////992n/+mmIf/77tT///////nlvv/ppyP/+unE/////////fv/////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////fr///////nnwf/ppRz/+urJ/////////fv/////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////78///////yyXf/7LI///78+P/vvVn/8cdw/////////v3/////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////v3///37//768//sskD/9NKK////
+        /////vz/////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////+/f///v3//vrw/+66U//yy3z/7rtP//jj
+        t/////7///37////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////v35////
+        ///115n/7LE8//347f///v7///79////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////78////
+        ///55br/554O/+yzP//8893////////+/P//////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////79///+/f/++/P/7bVE//TUj/////////78////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////+/f///vz//v33/+20Rv/ppyT//fbk/////////vz/////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////9+///////+unG/+yzPP/67M7////+///+/P//////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////37///////01I//6KMS//vu0/////////78////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////fv///////XXmf/uu1P//vnv////
+        /////v3/////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////9+v////7/+ejC/+ii
+        FP/44bL////////+/P//////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////7///78////
+        ///yynn/8cVt/////////v7////+////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////vz///////325f/qqSf/8ch0/////////v3////+////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////7+///+/f//////8MJh//PPgP////////78////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////79///////+/PP/7LE9/+uuM//++vD//////////v//////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////+/v///v3///////DBX//z0IL////////9+///////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////+/P///////vrw/+23SP/mmgD/+unE////
+        /////v3/////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////7///79///////wxGj/8sx7////
+        /////vz////+////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////vz///////zy
+        3P/vvlj/66ws//HIdv/+/fn///7+////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////+///+
+        /P//////88+E/+/AY////vv////+///+/v//////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////37///////55r7/7rpO//jitf/ssT//++7U/////v////7/////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////fr///////fdqf/tuEj//PTj/////////v3/////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////9+v//////9tuk/+20Qv///fj/7rtU//LLfP////////79////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////77///////78Nj/7LE4//jlvP////////77////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////v///vz///////HGbP/wwmX///////nl
+        vP/qqiv//fbn/////////v3/////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////v///fv////+/++/
+        YP/wxGz////////+/v////7/////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////vz///////vw
+        2f/rrzf/9+Gz////////////7rhP//LLfP////////37////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////36///////55b7/6qkn//vt0v////////78////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////7///37///////zzYH/7bVH///++////fr///////jkuv/ppyT//ffn///+/f///v3/////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////v/+/fr///////DEav/uulL////9///9+////v7/////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////37///////67M//6qsv//jlvf///////v36/////v///fn/7LNA//LJ
+        eP///////v36////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////78///+/P/9+Ov/6qwx//PQ
+        iv///////vz4///+/f//////////////////////////////////////////////////////////////
+        //////////////////////////////////////////37///////++/T/7LE7//LKe////////v36////
+        /////v3///////fgsP/ppyP//ffo///9+////vz/////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////vv///////rqy//ppSD/9tuk///////+/fr///37////////////////////////////////////
+        /////////////////////////////////////////////////////////vz5///////+/ff/7rtW/+23
+        S////vr///36///+/f///////////////v/+/Pf/7bVC//HIdf///////v35////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////9+///////+OO1/+mlIf/zzoX////////////+/Pj///78////
+        /////////////////////////////////////////////////////////////////////fr//vz4////
+        ///99uX/7LRG/+yzQf/99+j///78///+/P///////////////////v3///////jhs//qrC7//PLd///+
+        /P///vv/////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////37///////66sn/6640/+23
+        S//8893//////////////fr///77/////v////////////////////////////////////////79///9
+        +////fv////////////3363/6qst//DAYv/9+Oz////////+/P/////////////////////////+///+
+        /v/+/fr/775Y//HIdP////////36/////v//////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////fr///////315f/wwmb/6qkr//LJd//89N///////////////////////////////v3///79///+
+        /f////////////////////////////nmvf/tuE7/6qwx//XYm/////3////////+/P//////////////
+        /////////////////////vz///////jjuP/rrzT/++/X/////////vv/////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////+///++//////////+//noxf/uu1X/6qoq/++9VP/22p///fbn////
+        ///////////////////////////////+/P/668r/885//+yyOv/qqyv/882C//z04/////////7+///+
+        /P////////////////////////////////////////79///+/v///v3/7rxW//LLev////////37////
+        /v//////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////79//////////////7+//vx
+        2f/z0IP/7bVB/+mnE//rri//7bZJ//DBZf/vwGL/8MFi/+21Qv/qqyP/7LEw//DAXv/22p7//PXm////
+        //////////79/////v///////////////////////////////////////////////////fv///////ji
+        tv/qqy//+uzR/////////vz/////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///+/fn////////////88+D/992p/+++Xf/qqB//660p/+64Sf/vvVb/771W/+64Sv/rsDH/6acd/+20
+        Q//01JX/+/Da/////////////vz4/////v//////////////////////////////////////////////
+        //////////79///////+/Pf/9NSV//rs0P////////79////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////v/+/fr///////347f/zzoL/6684/+22Sf/00Y7/+/DW//789P//////////////
+        ///////////7//325f/22aH/7rpY/+utM//wxGj/+/DX/////////fv///79////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////v///fv///////rpyP/ssj3/7bVG//jhtP//////////////
+        /////v7///37//78+f/+/Pn///37///+/f/////////////////668z/77xa/+qqKP/226P///////79
+        +v////7//////////////////////////////////////////////////////////v///fr///79////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////v3///////fgsP/ppiH/8sp6///9
+        +P///////v36//78+P///fv///79/////v///////////////v///v3///77//78+f/+/Pn/////////
+        ///22qL/6acj//PQiv////////77////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////v3///////jj
+        uP/ppCD/9tyl/////////v3//v35///+/v//////////////////////////////////////////////
+        ///////////+///9+v/+/fr///////rs0P/ppyX/9NKO/////////v3/////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////v3///////zz3//ppyT/9tmd///////+/Pj///78////////////////////////////////////
+        //////////////////////////////////////////79//789///////+uzL/+iiGf/34bH////////+
+        /P//////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////38///////tuE3/8MJn///////+/Pn///7+////////////////////
+        /////////////////////////////////////////////////////////////////////////vz4////
+        ///11pb/6agk//357f///v7///79////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////36///////23Kf/6qsv//768P////////79////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////vz//////+24Sv/xyHT///////79+v//////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////+///9+////v3/7bVF//TS
+        i/////////78////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////79///////55bz/6qwu//757f///v7///78////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////////9
+        +///////++3Q/+uuNP/88dz//////////v//////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////vnw/+21
+        R//22qP///////79+f//////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////+/fn///////TTkv/uulL//vrz/////////////////////////////f39//39
+        /f/////////////////////////////////////////////////+/v7/////////////////////////
+        ///////////+///+/P/xyHT/8MNp///////+/fn/////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////v35///////wxGr/8cdv///+/P///v7/////////
+        /////////v7+///////+/v7////////////////////////////////////////////9/f3//Pz8//39
+        /f/////////////////////////////+/f//////9tmg/+65T////vz///79///+/v//////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////+///9+///////775Z//TR
+        iv////////79/////////////v7+///////v7+//9/f3///////+/v7/////////////////////////
+        //////////////7+/v///////////////////////////////////v3///////jitf/ttUn//vv0////
+        /////v3/////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /v///fv//////++9Vv/005H////////+/f///////Pz8///////u7u7/TExM/21tbf/8/Pz/////////
+        ///////////////////8/Pz//////7+/v/9OTk7/19fX///////8/Pz///////////////////79////
+        ///447f/7bRI//768f////////79////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////v36///////ww2f/8sx8/////////v3///////r6+v//////srKy/wkJ
+        Cf8NDQ3/4ODg///////+/v7/////////////////+/v7//////9oaGj/AAAA/46Ojv//////+fn5////
+        ///////////////+/f//////9tyn/+22Sv///vr///7+///+/f//////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////78+f//////882B/++/Xv/+/Pf////+//7+
+        /v/6+vr//////5CQkP8DAwP/BgYG/8XFxf///////f39/////////////v7+//7+/v/4+Pj/PT09/wAA
+        AP9ra2v///////r6+v///////////////////v3////+//POg//vvln////////9+v//////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////+/fr///////ji
+        tf/ssj7//ffr/////v/+/v7/+vr6//////+Ojo7/AwMD/wcHB//ExMT///////39/f////////////7+
+        /v//////9vb2/zo6Ov8BAQH/ZmZm///////7+/v///////////////////////789//vvVv/8s6I//z9
+        /f/8+vb//Pz9//z8/P/8/Pz//Pz8//39/f/8/Pz//Pz8//z8/P/8/Pz//Pz8//7+/v//////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////79///+/f/++vH/6640//jis/////7///79//r6+v//////p6en/wgICP8JCQn/2dnZ////
+        ///+/v7////////////+/v7//Pz8//7+/v9RUVH/AQEB/3V1df//////+fn5///////////////+///+
+        /f/78dz/6qww//3w0/////////37////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////+/fn///////LKev/tt0n////9///+/P/8/Pz//v7+/+Tk
+        5P86Ojr/U1NT//n5+f////////////////////////////r6+v//////hYWF/wEBAf+pqan///////r6
+        +v/////////////+/P//////8sx7/++6Tv/z+f//7Orn//Hy8v/u7u7/7+/v//Hx8f/z8/P/8/Pz//Pz
+        8//z8/P/8fLy/+/w8P/s6+v/+Pf2////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////79///+/P/99uf/6agn//fd
+        qP///////v35//7+////////0dHR/+Hh4f/////////////////////////////////+/v7//////+Pj
+        4/+cnJz/8PDw///////+/v7////////+/P///v7/++7S/+ejGv/9787/wM3b/z9CRP9KSEf/SUpK/0VF
+        Rf8/QED/PT09/0BAQP9CQkL/Q0ND/0VFRf9LTEz/QUFA/66ll////////f39////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////vz///////ferP/ppiT//PLb/////v///fr//v7+/////////////v7+////////////////////
+        ///////////////////////////////////////////////++////vz///74/+uvN//xyXn//v///+vu
+        8P9mdID/AAAA/wAAAP8AAAD/GRUS/zExMf8hIiP/FBUV/xcWFv8AAwX/AAAA/wAAAP+NgW7///////z8
+        /P//////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////9+///////8cdx/+utMP/9+Or///////79+v/7+/v//Pz8////
+        /////////////////////////////////////////f39//v7+//+/v7////////++////v7//////+68
+        Vf/ttkj///35//39+////////P///5mjrP8dIyn/AAAA/yYgGv+EfXj/wL25/+Ti4f/t7ez/1dvg/0VQ
+        XP8AAAD/lop2///////8/Pz/////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////7///7+///++//vwGD/660u//vv
+        1P/////////+///+/f///v3////+/////v/////////////////////////+/////v/+/v3///79///+
+        /v///////fjs/+64T//ssj///fnv/////////v7/////////////////2d3i/3+Hjf8fIyn/CgoJ/xUU
+        Ev9KREH/jImF/9fSzf/x9ff/Vl9o/4yCcv///////Pz8////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////////+
+        /v/////////+//LMfP/ppSD/9dea//768v///////////////////v3///79///+/P///vz///78///+
+        /f/////////////////+/Pj/+OO3/+qqLf/uvFX//vrx///////+/vz//f39//39/v+9xMv/XGBl/0ZG
+        Rv9eWFP/083J/5mgqf8oLzb/AAAA/wAAAP8GBQX/S0M+/6Cclv/r5+T///7+//7+/v//////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////+///+/f//////+OS5/+uuN//ttUj/9tqh//zx3P/++/X/////////
+        //////////////////////////35//zz4f/44bH/771b/+qqLf/11pb//////////////v3//Pz8////
+        ///Dz9n/EBsl/wEAAP8AAAD/RTgq///69P//////7/X7/19odP8AAAD/BQUF/wABAf8AAAD/inxt////
+        /v/9/f3/////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////7//v35///////+/Pb/9NKN/+yz
+        Qf/ssT7/771X//PNfv/22Z3/99+r//ffq//226H/89CF//DAXf/ss0L/7LE6//LJef/99uT///////78
+        +f///v3///////z8/P//////yNHa/xQfKv8AAAD/AgID/zQqIv/Mx8D/8PDv/+nq7P+Gkpz/AwME/wcG
+        Bf8BAgP/AAAA/3tsXP////3//P3+////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////fv///78/////////vr/+OO6//POhP/wwF7/7rpQ/+21RP/ttUT/7rhM/++/Xf/yy3n/996v//75
+        7f/////////////9+v////7////////////+/v///v7+//////+xusH/QEVK/xETFf8AAAD/BwMA/zc2
+        NP8lKSz/AAAA/wAAAP8FBAP/JyQh/3hvZ//w6uP//v7///7+/v//////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////+/f/+/fn///7+//////////////////789v/99uj//fbo//76
+        8f///////////////////////vz5///+/P////////////////////////////7////+/f3//////+zw
+        9P+2u77/lZaY/3Bzdv9eXl7/YmJh/25tbP+Fg4D/p6Sh/9PQzf////////////7+/v//////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////+/f///fr//v35///+
+        +/////////////////////////78//79+v/+/fr///78////////////////////////////////////
+        /////////v////v7+/////7/////////////////////////////////////////////////+/v8//39
+        /P//////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////7///79///+/P///vz///79/////v//////////////////////////////
+        /////////////////////////////////////////Pz9//v7+v/8/Pv//Pz8//z8/P/8/Pz//Pz8//z8
+        /P/7+/v/+/v7//7+/v//////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////v7+//7+
+        /v/+/v7//v7+//7+/v/+/v7/////////////////////////////////////////////////////////
+        ////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>home</value>
+  </data>
+  <data name="&gt;&gt;伝票no.Name" xml:space="preserve">
+    <value>伝票no</value>
+  </data>
+  <data name="&gt;&gt;伝票no.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eos伝票.Name" xml:space="preserve">
+    <value>eos伝票</value>
+  </data>
+  <data name="&gt;&gt;eos伝票.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;売り上げ区分.Name" xml:space="preserve">
+    <value>売り上げ区分</value>
+  </data>
+  <data name="&gt;&gt;売り上げ区分.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;納品日.Name" xml:space="preserve">
+    <value>納品日</value>
+  </data>
+  <data name="&gt;&gt;納品日.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;得意先コード.Name" xml:space="preserve">
+    <value>得意先コード</value>
+  </data>
+  <data name="&gt;&gt;得意先コード.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;得意先コード２.Name" xml:space="preserve">
+    <value>得意先コード２</value>
+  </data>
+  <data name="&gt;&gt;得意先コード２.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;は.Name" xml:space="preserve">
+    <value>は</value>
+  </data>
+  <data name="&gt;&gt;は.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ひ.Name" xml:space="preserve">
+    <value>ひ</value>
+  </data>
+  <data name="&gt;&gt;ひ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;空白.Name" xml:space="preserve">
+    <value>空白</value>
+  </data>
+  <data name="&gt;&gt;空白.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ふ.Name" xml:space="preserve">
+    <value>ふ</value>
+  </data>
+  <data name="&gt;&gt;ふ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;合計金額.Name" xml:space="preserve">
+    <value>合計金額</value>
+  </data>
+  <data name="&gt;&gt;合計金額.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;売りか合計金額.Name" xml:space="preserve">
+    <value>売りか合計金額</value>
+  </data>
+  <data name="&gt;&gt;売りか合計金額.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;売上合計金額.Name" xml:space="preserve">
+    <value>売上合計金額</value>
+  </data>
+  <data name="&gt;&gt;売上合計金額.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;消費税.Name" xml:space="preserve">
+    <value>消費税</value>
+  </data>
+  <data name="&gt;&gt;消費税.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;コメント欄.Name" xml:space="preserve">
+    <value>コメント欄</value>
+  </data>
+  <data name="&gt;&gt;コメント欄.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;へ.Name" xml:space="preserve">
+    <value>へ</value>
+  </data>
+  <data name="&gt;&gt;へ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;伝票入力日.Name" xml:space="preserve">
+    <value>伝票入力日</value>
+  </data>
+  <data name="&gt;&gt;伝票入力日.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ほ.Name" xml:space="preserve">
+    <value>ほ</value>
+  </data>
+  <data name="&gt;&gt;ほ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;わからん.Name" xml:space="preserve">
+    <value>わからん</value>
+  </data>
+  <data name="&gt;&gt;わからん.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>home</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
