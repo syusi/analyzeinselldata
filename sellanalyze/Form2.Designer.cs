@@ -28,19 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.datadrop = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // datadrop
+            // 
+            this.datadrop.AllowDrop = true;
+            this.datadrop.BackColor = System.Drawing.SystemColors.Highlight;
+            this.datadrop.Font = new System.Drawing.Font("MS UI Gothic", 18F);
+            this.datadrop.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.datadrop.Location = new System.Drawing.Point(12, 9);
+            this.datadrop.Name = "datadrop";
+            this.datadrop.Size = new System.Drawing.Size(258, 237);
+            this.datadrop.TabIndex = 5;
+            this.datadrop.Text = "ここにデータを\r\nドラックドロップ";
+            this.datadrop.DragDrop += new System.Windows.Forms.DragEventHandler(this.datadrop_DragDrop);
+            this.datadrop.DragEnter += new System.Windows.Forms.DragEventHandler(this.datadrop_DragEnter);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(282, 255);
+            this.Controls.Add(this.datadrop);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "change";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label datadrop;
     }
 }

@@ -118,11 +118,50 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="manthBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="manthBox.Items" xml:space="preserve">
+    <value>１月</value>
+  </data>
+  <data name="manthBox.Items1" xml:space="preserve">
+    <value>２月</value>
+  </data>
+  <data name="manthBox.Items2" xml:space="preserve">
+    <value>３月</value>
+  </data>
+  <data name="manthBox.Items3" xml:space="preserve">
+    <value>４月</value>
+  </data>
+  <data name="manthBox.Items4" xml:space="preserve">
+    <value>５月</value>
+  </data>
+  <data name="manthBox.Items5" xml:space="preserve">
+    <value>６月</value>
+  </data>
+  <data name="manthBox.Items6" xml:space="preserve">
+    <value>７月</value>
+  </data>
+  <data name="manthBox.Items7" xml:space="preserve">
+    <value>８月</value>
+  </data>
+  <data name="manthBox.Items8" xml:space="preserve">
+    <value>９月</value>
+  </data>
+  <data name="manthBox.Items9" xml:space="preserve">
+    <value>１０月</value>
+  </data>
+  <data name="manthBox.Items10" xml:space="preserve">
+    <value>１１月</value>
+  </data>
+  <data name="manthBox.Items11" xml:space="preserve">
+    <value>１２月</value>
+  </data>
   <data name="manthBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 84</value>
+    <value>48, 366</value>
   </data>
   <data name="manthBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 23</value>
+    <value>121, 28</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="manthBox.TabIndex" type="System.Int32, mscorlib">
@@ -138,16 +177,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;manthBox.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>14</value>
   </data>
   <data name="monthlabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 12pt</value>
+    <value>MS UI Gothic, 13.8pt</value>
   </data>
   <data name="monthlabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 25</value>
+    <value>44, 320</value>
   </data>
   <data name="monthlabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 43</value>
+    <value>150, 43</value>
   </data>
   <data name="monthlabel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -165,13 +204,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;monthlabel.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>13</value>
+  </data>
+  <data name="storeBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
   </data>
   <data name="storeBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>266, 83</value>
+    <value>21, 484</value>
   </data>
   <data name="storeBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 23</value>
+    <value>192, 28</value>
   </data>
   <data name="storeBox.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -186,16 +228,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;storeBox.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>12</value>
   </data>
   <data name="storelabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 12pt</value>
+    <value>MS UI Gothic, 13.8pt</value>
   </data>
   <data name="storelabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>266, 25</value>
+    <value>44, 438</value>
   </data>
   <data name="storelabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 29</value>
+    <value>146, 39</value>
   </data>
   <data name="storelabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -213,193 +255,43 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;storelabel.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>11</value>
   </data>
-  <data name="datadrop.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 18pt</value>
+  <data name="anabutton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 13.8pt</value>
   </data>
-  <data name="datadrop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>465, 25</value>
+  <data name="anabutton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>577, 73</value>
   </data>
-  <data name="datadrop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 99</value>
+  <data name="anabutton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 53</value>
   </data>
-  <data name="datadrop.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="datadrop.Text" xml:space="preserve">
-    <value>ここにデータを
-ドラックドロップ</value>
-  </data>
-  <data name="&gt;&gt;datadrop.Name" xml:space="preserve">
-    <value>datadrop</value>
-  </data>
-  <data name="&gt;&gt;datadrop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;datadrop.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;datadrop.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 166</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="listView1.Items" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkMAwAAAFFTeXN0
-        ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2Vu
-        PWIwM2Y1ZjdmMTFkNTBhM2EFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0l0ZW0LAAAA
-        BFRleHQKSW1hZ2VJbmRleAxTdWJJdGVtQ291bnQIU3ViSXRlbTEIU3ViSXRlbTIIU3ViSXRlbTMJQmFj
-        a0NvbG9yB0NoZWNrZWQERm9udAlGb3JlQ29sb3IXVXNlSXRlbVN0eWxlRm9yU3ViSXRlbXMBAAAEBAQE
-        AAQEAAgIMVN5c3RlbS5XaW5kb3dzLkZvcm1zLkxpc3RWaWV3SXRlbStMaXN0Vmlld1N1Ykl0ZW0CAAAA
-        MVN5c3RlbS5XaW5kb3dzLkZvcm1zLkxpc3RWaWV3SXRlbStMaXN0Vmlld1N1Ykl0ZW0CAAAAMVN5c3Rl
-        bS5XaW5kb3dzLkZvcm1zLkxpc3RWaWV3SXRlbStMaXN0Vmlld1N1Ykl0ZW0CAAAAFFN5c3RlbS5EcmF3
-        aW5nLkNvbG9yAwAAAAETU3lzdGVtLkRyYXdpbmcuRm9udAMAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3ID
-        AAAAAQIAAAAGBAAAAAD/////BAAAAAkFAAAACQYAAAAJBwAAAAX4////FFN5c3RlbS5EcmF3aW5nLkNv
-        bG9yBAAAAARuYW1lBXZhbHVlCmtub3duQ29sb3IFc3RhdGUBAAAACQcHAwAAAAoAAAAAAAAAABgAAQAA
-        CQkAAAAB9v////j///8KAAAAAAAAAAAaAAEAAQUFAAAAMVN5c3RlbS5XaW5kb3dzLkZvcm1zLkxpc3RW
-        aWV3SXRlbStMaXN0Vmlld1N1Ykl0ZW0EAAAABHRleHQEbmFtZQVzdHlsZQh1c2VyRGF0YQEBBAI+U3lz
-        dGVtLldpbmRvd3MuRm9ybXMuTGlzdFZpZXdJdGVtK0xpc3RWaWV3U3ViSXRlbStTdWJJdGVtU3R5bGUC
-        AAAAAgAAAAYLAAAAAWEGDAAAABFMaXN0Vmlld1N1Ykl0ZW0yMgoKAQYAAAAFAAAACgYNAAAAEUxpc3RW
-        aWV3U3ViSXRlbTIzCgoBBwAAAAUAAAAGDgAAAAFiBg8AAAARTGlzdFZpZXdTdWJJdGVtMjQKCgUJAAAA
-        E1N5c3RlbS5EcmF3aW5nLkZvbnQEAAAABE5hbWUEU2l6ZQVTdHlsZQRVbml0AQAEBAsYU3lzdGVtLkRy
-        YXdpbmcuRm9udFN0eWxlAwAAABtTeXN0ZW0uRHJhd2luZy5HcmFwaGljc1VuaXQDAAAAAwAAAAYQAAAA
-        DE1TIFVJIEdvdGhpYwAAEEEF7////xhTeXN0ZW0uRHJhd2luZy5Gb250U3R5bGUBAAAAB3ZhbHVlX18A
-        CAMAAAAAAAAABe7///8bU3lzdGVtLkRyYXdpbmcuR3JhcGhpY3NVbml0AQAAAAd2YWx1ZV9fAAgDAAAA
-        AwAAAAs=
-</value>
-  </data>
-  <data name="listView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>302, 166</value>
-  </data>
-  <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>868, 351</value>
-  </data>
-  <data name="listView1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;listView1.Name" xml:space="preserve">
-    <value>listView1</value>
-  </data>
-  <data name="&gt;&gt;listView1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listView1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="伝票no.Text" xml:space="preserve">
-    <value>伝票no</value>
-  </data>
-  <data name="eos伝票.Text" xml:space="preserve">
-    <value>eos伝票</value>
-  </data>
-  <data name="売り上げ区分.Text" xml:space="preserve">
-    <value>売り上げ区分</value>
-  </data>
-  <data name="納品日.Text" xml:space="preserve">
-    <value>納品日</value>
-  </data>
-  <data name="得意先コード.Text" xml:space="preserve">
-    <value>得意先コード</value>
-  </data>
-  <data name="得意先コード２.Text" xml:space="preserve">
-    <value>得意先コード２</value>
-  </data>
-  <data name="は.Text" xml:space="preserve">
-    <value>は</value>
-  </data>
-  <data name="ひ.Text" xml:space="preserve">
-    <value>ひ</value>
-  </data>
-  <data name="空白.Text" xml:space="preserve">
-    <value>空白</value>
-  </data>
-  <data name="ふ.Text" xml:space="preserve">
-    <value>ふ</value>
-  </data>
-  <data name="合計金額.Text" xml:space="preserve">
-    <value>合計金額</value>
-  </data>
-  <data name="売りか合計金額.Text" xml:space="preserve">
-    <value>売りか合計金額</value>
-  </data>
-  <data name="売上合計金額.Text" xml:space="preserve">
-    <value>売上合計金額</value>
-  </data>
-  <data name="消費税.Text" xml:space="preserve">
-    <value>消費税</value>
-  </data>
-  <data name="コメント欄.Text" xml:space="preserve">
-    <value>コメント欄</value>
-  </data>
-  <data name="へ.Text" xml:space="preserve">
-    <value>へ</value>
-  </data>
-  <data name="伝票入力日.Text" xml:space="preserve">
-    <value>伝票入力日</value>
-  </data>
-  <data name="ほ.Text" xml:space="preserve">
-    <value>ほ</value>
-  </data>
-  <data name="わからん.Text" xml:space="preserve">
-    <value>わからん</value>
-  </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 219</value>
-  </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+  <data name="anabutton.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>button2</value>
+  <data name="anabutton.Text" xml:space="preserve">
+    <value>分析開始</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="&gt;&gt;anabutton.Name" xml:space="preserve">
+    <value>anabutton</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+  <data name="&gt;&gt;anabutton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;anabutton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;anabutton.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="analabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 10.8pt</value>
   </data>
   <data name="analabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 282</value>
+    <value>249, 181</value>
   </data>
   <data name="analabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 280</value>
+    <value>818, 281</value>
   </data>
   <data name="analabel.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -417,6 +309,301 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;analabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="pathchangemenu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 10.8pt</value>
+  </data>
+  <data name="pathchangemenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 32</value>
+  </data>
+  <data name="pathchangemenu.Text" xml:space="preserve">
+    <value>ディレクトリ変更</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1146, 36</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="updownbutton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 13.8pt</value>
+  </data>
+  <data name="updownbutton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 259</value>
+  </data>
+  <data name="updownbutton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 30</value>
+  </data>
+  <data name="updownbutton.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;updownbutton.Name" xml:space="preserve">
+    <value>updownbutton</value>
+  </data>
+  <data name="&gt;&gt;updownbutton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;updownbutton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;updownbutton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="oldtimerange.CalendarFont" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="oldtimerange.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 13.8pt</value>
+  </data>
+  <data name="oldtimerange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 99</value>
+  </data>
+  <data name="oldtimerange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 30</value>
+  </data>
+  <data name="oldtimerange.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;oldtimerange.Name" xml:space="preserve">
+    <value>oldtimerange</value>
+  </data>
+  <data name="&gt;&gt;oldtimerange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oldtimerange.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;oldtimerange.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="rangelabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 13.8pt</value>
+  </data>
+  <data name="rangelabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 39</value>
+  </data>
+  <data name="rangelabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 42</value>
+  </data>
+  <data name="rangelabel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="rangelabel.Text" xml:space="preserve">
+    <value>集計範囲</value>
+  </data>
+  <data name="&gt;&gt;rangelabel.Name" xml:space="preserve">
+    <value>rangelabel</value>
+  </data>
+  <data name="&gt;&gt;rangelabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rangelabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rangelabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="kara.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 13.8pt</value>
+  </data>
+  <data name="kara.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 99</value>
+  </data>
+  <data name="kara.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 15</value>
+  </data>
+  <data name="kara.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="kara.Text" xml:space="preserve">
+    <value>～</value>
+  </data>
+  <data name="&gt;&gt;kara.Name" xml:space="preserve">
+    <value>kara</value>
+  </data>
+  <data name="&gt;&gt;kara.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;kara.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;kara.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="newtimerange.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 13.8pt</value>
+  </data>
+  <data name="newtimerange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 99</value>
+  </data>
+  <data name="newtimerange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 30</value>
+  </data>
+  <data name="newtimerange.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;newtimerange.Name" xml:space="preserve">
+    <value>newtimerange</value>
+  </data>
+  <data name="&gt;&gt;newtimerange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;newtimerange.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;newtimerange.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="oldtextlabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 13.8pt</value>
+  </data>
+  <data name="oldtextlabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 66</value>
+  </data>
+  <data name="oldtextlabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 30</value>
+  </data>
+  <data name="oldtextlabel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="oldtextlabel.Text" xml:space="preserve">
+    <value>範囲(始点)</value>
+  </data>
+  <data name="&gt;&gt;oldtextlabel.Name" xml:space="preserve">
+    <value>oldtextlabel</value>
+  </data>
+  <data name="&gt;&gt;oldtextlabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oldtextlabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;oldtextlabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="newtimelabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 13.8pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="newtimelabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="newtimelabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>317, 66</value>
+  </data>
+  <data name="newtimelabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 30</value>
+  </data>
+  <data name="newtimelabel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="newtimelabel.Text" xml:space="preserve">
+    <value>範囲(終点)</value>
+  </data>
+  <data name="&gt;&gt;newtimelabel.Name" xml:space="preserve">
+    <value>newtimelabel</value>
+  </data>
+  <data name="&gt;&gt;newtimelabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;newtimelabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;newtimelabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="denname.Text" xml:space="preserve">
+    <value>商品名</value>
+  </data>
+  <data name="denname.Width" type="System.Int32, mscorlib">
+    <value>370</value>
+  </data>
+  <data name="valuecolumu.Text" xml:space="preserve">
+    <value>納品単価</value>
+  </data>
+  <data name="valuecolumu.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="nouhincolumu.Text" xml:space="preserve">
+    <value>納品個数</value>
+  </data>
+  <data name="nouhincolumu.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="denlist.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="denlist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>253, 214</value>
+  </data>
+  <data name="denlist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>804, 248</value>
+  </data>
+  <data name="denlist.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;denlist.Name" xml:space="preserve">
+    <value>denlist</value>
+  </data>
+  <data name="&gt;&gt;denlist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;denlist.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;denlist.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 13.8pt</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 213</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 43</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>集計伝票(詳細)</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -429,7 +616,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1190, 645</value>
+    <value>1146, 543</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -718,121 +905,34 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
   </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>WindowsDefaultBounds</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>home</value>
   </data>
-  <data name="&gt;&gt;伝票no.Name" xml:space="preserve">
-    <value>伝票no</value>
+  <data name="&gt;&gt;pathchangemenu.Name" xml:space="preserve">
+    <value>pathchangemenu</value>
   </data>
-  <data name="&gt;&gt;伝票no.Type" xml:space="preserve">
+  <data name="&gt;&gt;pathchangemenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;denname.Name" xml:space="preserve">
+    <value>denname</value>
+  </data>
+  <data name="&gt;&gt;denname.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;eos伝票.Name" xml:space="preserve">
-    <value>eos伝票</value>
+  <data name="&gt;&gt;valuecolumu.Name" xml:space="preserve">
+    <value>valuecolumu</value>
   </data>
-  <data name="&gt;&gt;eos伝票.Type" xml:space="preserve">
+  <data name="&gt;&gt;valuecolumu.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;売り上げ区分.Name" xml:space="preserve">
-    <value>売り上げ区分</value>
+  <data name="&gt;&gt;nouhincolumu.Name" xml:space="preserve">
+    <value>nouhincolumu</value>
   </data>
-  <data name="&gt;&gt;売り上げ区分.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;納品日.Name" xml:space="preserve">
-    <value>納品日</value>
-  </data>
-  <data name="&gt;&gt;納品日.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;得意先コード.Name" xml:space="preserve">
-    <value>得意先コード</value>
-  </data>
-  <data name="&gt;&gt;得意先コード.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;得意先コード２.Name" xml:space="preserve">
-    <value>得意先コード２</value>
-  </data>
-  <data name="&gt;&gt;得意先コード２.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;は.Name" xml:space="preserve">
-    <value>は</value>
-  </data>
-  <data name="&gt;&gt;は.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ひ.Name" xml:space="preserve">
-    <value>ひ</value>
-  </data>
-  <data name="&gt;&gt;ひ.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;空白.Name" xml:space="preserve">
-    <value>空白</value>
-  </data>
-  <data name="&gt;&gt;空白.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ふ.Name" xml:space="preserve">
-    <value>ふ</value>
-  </data>
-  <data name="&gt;&gt;ふ.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;合計金額.Name" xml:space="preserve">
-    <value>合計金額</value>
-  </data>
-  <data name="&gt;&gt;合計金額.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;売りか合計金額.Name" xml:space="preserve">
-    <value>売りか合計金額</value>
-  </data>
-  <data name="&gt;&gt;売りか合計金額.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;売上合計金額.Name" xml:space="preserve">
-    <value>売上合計金額</value>
-  </data>
-  <data name="&gt;&gt;売上合計金額.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;消費税.Name" xml:space="preserve">
-    <value>消費税</value>
-  </data>
-  <data name="&gt;&gt;消費税.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;コメント欄.Name" xml:space="preserve">
-    <value>コメント欄</value>
-  </data>
-  <data name="&gt;&gt;コメント欄.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;へ.Name" xml:space="preserve">
-    <value>へ</value>
-  </data>
-  <data name="&gt;&gt;へ.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;伝票入力日.Name" xml:space="preserve">
-    <value>伝票入力日</value>
-  </data>
-  <data name="&gt;&gt;伝票入力日.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ほ.Name" xml:space="preserve">
-    <value>ほ</value>
-  </data>
-  <data name="&gt;&gt;ほ.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;わからん.Name" xml:space="preserve">
-    <value>わからん</value>
-  </data>
-  <data name="&gt;&gt;わからん.Type" xml:space="preserve">
+  <data name="&gt;&gt;nouhincolumu.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
