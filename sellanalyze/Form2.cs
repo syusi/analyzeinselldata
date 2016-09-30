@@ -17,8 +17,8 @@ namespace sellanalyze
         public Form2()
         {
             InitializeComponent();
-            var sr = new StreamReader("config.txt", Encoding.GetEncoding("Shift_JIS"));
-            if ((filepath = sr.ReadLine()) == null)
+            filepath = Properties.Settings.Default.Datapath;
+            if (filepath.Equals(""))
             {
                 datadrop.Text = "データが入っているディレクトリを選択してください";
             }
@@ -26,7 +26,6 @@ namespace sellanalyze
             {
                 datadrop.Text = "現在のディレクトリは\n" + filepath + "です";
             }
-            sr.Close();
         }
         private void datadrop_DragEnter(object sender, DragEventArgs e)
         {
@@ -44,10 +43,8 @@ namespace sellanalyze
             if (File.Exists(file[0] + @"\turiden.txt"))
             {
                 datadrop.Text = file[0] + "ディレクトリが選択されました";
-                var sw = new StreamWriter("config.txt", false, Encoding.GetEncoding("Shift_JIS"));
-                sw.WriteLine(file[0]);
-                sw.Flush();
-                sw.Close();
+                Properties.Settings.Default.Datapath = file[0];
+                Properties.Settings.Default.Save();
             }
             else
             {

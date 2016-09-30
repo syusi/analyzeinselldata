@@ -20,11 +20,14 @@ namespace sellanalyze
         public home()
         {
             InitializeComponent();
-            if (!File.Exists("config.txt"))
+            if (Properties.Settings.Default.isUpgrade == false)
             {
-                var sw = new StreamWriter("config.txt");
-                sw.Close();
-                newFileOpen();
+                Properties.Settings.Default.Upgrade();
+                Properties.Settings.Default.isUpgrade = true;
+                if (Properties.Settings.Default.Datapath.Equals(""))
+                {
+                    newFileOpen();
+                }
             }
             var dt = DateTime.Now;
             newtimerange.Value = dt;
@@ -43,7 +46,7 @@ namespace sellanalyze
         {
             denpyou.Clear();
             storeBox.Items.Clear();
-            var path = new StreamReader("config.txt", Encoding.GetEncoding("Shift_JIS")).ReadLine();
+            var path = Properties.Settings.Default.Datapath;
             var densr = new StreamReader(path + @"\turiden.txt", Encoding.GetEncoding("Shift_JIS"));
             var meisr = new StreamReader(path + @"\turimei.txt", Encoding.GetEncoding("Shift_JIS"));
             var stosr = new StreamReader(path + @"\mtokui.txt", Encoding.GetEncoding("Shift_JIS"));
