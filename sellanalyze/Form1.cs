@@ -95,13 +95,16 @@ namespace sellanalyze
             }
             else
             {
-                stosr = new StreamReader(path + @"\displaytokui.txt", Encoding.GetEncoding("Shift_JIS"));
-                allStore.Clear();
-                stoline = readAndSplit(stosr);
-                while (stoline != null)
+                if (File.Exists(path + @"\displaytokui.txt"))
                 {
-                    allStore.Add(new Store(stoline));
+                    stosr = new StreamReader(path + @"\displaytokui.txt", Encoding.GetEncoding("Shift_JIS"));
+                    allStore.Clear();
                     stoline = readAndSplit(stosr);
+                    while (stoline != null)
+                    {
+                        allStore.Add(new Store(stoline));
+                        stoline = readAndSplit(stosr);
+                    }
                 }
                 storeBox.Items.Add(new Store("高知植木鉢センター", "0"));
                 foreach (Store onestore in allStore)
@@ -110,6 +113,7 @@ namespace sellanalyze
                         storeBox.Items.Add(onestore);
                 }
                 changeview(denpyou[0]);
+                updownbutton.Value = 0;
                 updownbutton.Maximum = denpyou.Count - 1;
             }
 
