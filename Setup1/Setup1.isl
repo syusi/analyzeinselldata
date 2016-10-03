@@ -3963,7 +3963,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{CB8B7F11-123B-44F0-A2B4-30270D3B7F4A}</td></row>
 		<row><td>ISUSSignature</td><td>{0D4D0BD7-1461-4E4F-94CD-1ED35DB269F5}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewShortcuts,viewProject,viewISToday,viewCustomActions,viewSystemSearch,viewUpgradePaths</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewShortcuts,viewProject,viewISToday,viewCustomActions,viewSystemSearch,viewUpgradePaths,viewUpdateService</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4338,7 +4338,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
 		<row><td>ProductCode</td><td>{FED57B8F-D725-4800-A386-7B095FD17B66}</td><td/></row>
 		<row><td>ProductName</td><td>営業分析ツール</td><td/></row>
-		<row><td>ProductVersion</td><td>1.2.1.0</td><td/></row>
+		<row><td>ProductVersion</td><td>1.2.3</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>

@@ -17,6 +17,7 @@ namespace sellanalyze
         string recentday;
         string oldday;
         List<Denpyou> denpyou = new List<Denpyou>();
+        List<string> goodslist = new List<string>();
         public home()
         {
             InitializeComponent();
@@ -182,8 +183,7 @@ namespace sellanalyze
                 if (selected.Count() != 0)
                 {
                     Form3 f3 = new Form3(selected.ToList(),manthBox.Text);
-                    f3.ShowDialog(this);
-                    f3.Dispose();
+                    f3.Show();
                 }
                 else
                     analabel.Text = "該当するデータがありません";
@@ -214,8 +214,7 @@ namespace sellanalyze
                 if (selectstore.Equals("0"))
                 {
                     Form3 f3 = new Form3(denpyou, storeBox.Text);
-                    f3.ShowDialog(this);
-                    f3.Dispose();
+                    f3.Show();
                 }
                 else
                 {
@@ -237,16 +236,16 @@ namespace sellanalyze
                 analabel.Text = "分析を行ってください";
             }
         }
+        private void goodslistset(string name)
+        {
 
+        }
         private void home_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
-        {
-
-        }
+        
     }
     public class goods
     {
