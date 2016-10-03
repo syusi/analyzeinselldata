@@ -35,11 +35,12 @@
             // 
             this.datadrop.AllowDrop = true;
             this.datadrop.BackColor = System.Drawing.SystemColors.Highlight;
+            this.datadrop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.datadrop.Font = new System.Drawing.Font("MS UI Gothic", 18F);
             this.datadrop.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.datadrop.Location = new System.Drawing.Point(12, 9);
+            this.datadrop.Location = new System.Drawing.Point(0, 0);
             this.datadrop.Name = "datadrop";
-            this.datadrop.Size = new System.Drawing.Size(258, 237);
+            this.datadrop.Size = new System.Drawing.Size(382, 305);
             this.datadrop.TabIndex = 5;
             this.datadrop.Text = "ここにデータを\r\nドラックドロップ";
             this.datadrop.DragDrop += new System.Windows.Forms.DragEventHandler(this.datadrop_DragDrop);
@@ -49,7 +50,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 255);
+            this.ClientSize = new System.Drawing.Size(382, 305);
             this.Controls.Add(this.datadrop);
             this.Name = "Form2";
             this.Text = "change";

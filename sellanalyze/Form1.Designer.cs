@@ -56,113 +56,167 @@
             // manthBox
             // 
             this.manthBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.manthBox, "manthBox");
+            this.manthBox.Font = new System.Drawing.Font("MS UI Gothic", 12F);
             this.manthBox.FormattingEnabled = true;
             this.manthBox.Items.AddRange(new object[] {
-            resources.GetString("manthBox.Items"),
-            resources.GetString("manthBox.Items1"),
-            resources.GetString("manthBox.Items2"),
-            resources.GetString("manthBox.Items3"),
-            resources.GetString("manthBox.Items4"),
-            resources.GetString("manthBox.Items5"),
-            resources.GetString("manthBox.Items6"),
-            resources.GetString("manthBox.Items7"),
-            resources.GetString("manthBox.Items8"),
-            resources.GetString("manthBox.Items9"),
-            resources.GetString("manthBox.Items10"),
-            resources.GetString("manthBox.Items11")});
+            "１月",
+            "２月",
+            "３月",
+            "４月",
+            "５月",
+            "６月",
+            "７月",
+            "８月",
+            "９月",
+            "１０月",
+            "１１月",
+            "１２月"});
+            this.manthBox.Location = new System.Drawing.Point(48, 366);
             this.manthBox.Name = "manthBox";
+            this.manthBox.Size = new System.Drawing.Size(121, 28);
+            this.manthBox.TabIndex = 0;
             this.manthBox.SelectedIndexChanged += new System.EventHandler(this.manthBox_SelectedIndexChanged);
             // 
             // monthlabel
             // 
             this.monthlabel.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.monthlabel, "monthlabel");
+            this.monthlabel.Font = new System.Drawing.Font("MS UI Gothic", 13.8F);
+            this.monthlabel.Location = new System.Drawing.Point(44, 320);
             this.monthlabel.Name = "monthlabel";
+            this.monthlabel.Size = new System.Drawing.Size(150, 43);
+            this.monthlabel.TabIndex = 1;
+            this.monthlabel.Text = "月の売り上げ";
             // 
             // storeBox
             // 
             this.storeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.storeBox, "storeBox");
+            this.storeBox.Font = new System.Drawing.Font("MS UI Gothic", 12F);
             this.storeBox.FormattingEnabled = true;
+            this.storeBox.Location = new System.Drawing.Point(21, 484);
             this.storeBox.Name = "storeBox";
+            this.storeBox.Size = new System.Drawing.Size(192, 28);
+            this.storeBox.TabIndex = 2;
             this.storeBox.SelectedIndexChanged += new System.EventHandler(this.storeBox_SelectedIndexChanged);
             // 
             // storelabel
             // 
-            resources.ApplyResources(this.storelabel, "storelabel");
+            this.storelabel.Font = new System.Drawing.Font("MS UI Gothic", 13.8F);
+            this.storelabel.Location = new System.Drawing.Point(44, 438);
             this.storelabel.Name = "storelabel";
+            this.storelabel.Size = new System.Drawing.Size(146, 39);
+            this.storelabel.TabIndex = 3;
+            this.storelabel.Text = "店の売り上げ";
             // 
             // anabutton
             // 
-            resources.ApplyResources(this.anabutton, "anabutton");
+            this.anabutton.Font = new System.Drawing.Font("MS UI Gothic", 13.8F);
+            this.anabutton.Location = new System.Drawing.Point(577, 73);
             this.anabutton.Name = "anabutton";
+            this.anabutton.Size = new System.Drawing.Size(140, 53);
+            this.anabutton.TabIndex = 7;
+            this.anabutton.Text = "分析開始";
             this.anabutton.UseVisualStyleBackColor = true;
             this.anabutton.Click += new System.EventHandler(this.button2_Click);
             // 
             // analabel
             // 
-            resources.ApplyResources(this.analabel, "analabel");
+            this.analabel.Font = new System.Drawing.Font("MS UI Gothic", 10.8F);
+            this.analabel.Location = new System.Drawing.Point(249, 181);
             this.analabel.Name = "analabel";
+            this.analabel.Size = new System.Drawing.Size(818, 281);
+            this.analabel.TabIndex = 8;
+            this.analabel.Text = "データ分析";
             // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pathchangemenu});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1382, 36);
+            this.menuStrip1.TabIndex = 9;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // pathchangemenu
             // 
-            resources.ApplyResources(this.pathchangemenu, "pathchangemenu");
+            this.pathchangemenu.Font = new System.Drawing.Font("メイリオ", 10.8F);
             this.pathchangemenu.Name = "pathchangemenu";
+            this.pathchangemenu.Size = new System.Drawing.Size(176, 32);
+            this.pathchangemenu.Text = "ディレクトリ変更";
             this.pathchangemenu.Click += new System.EventHandler(this.pathchangemenu_Click);
             // 
             // updownbutton
             // 
-            resources.ApplyResources(this.updownbutton, "updownbutton");
+            this.updownbutton.Font = new System.Drawing.Font("MS UI Gothic", 13.8F);
+            this.updownbutton.Location = new System.Drawing.Point(49, 259);
             this.updownbutton.Maximum = new decimal(new int[] {
             0,
             0,
             0,
             0});
             this.updownbutton.Name = "updownbutton";
+            this.updownbutton.Size = new System.Drawing.Size(120, 30);
+            this.updownbutton.TabIndex = 10;
             this.updownbutton.ValueChanged += new System.EventHandler(this.updownbutton_ValueChanged);
             // 
             // oldtimerange
             // 
-            resources.ApplyResources(this.oldtimerange, "oldtimerange");
+            this.oldtimerange.CalendarFont = new System.Drawing.Font("MS UI Gothic", 9F);
+            this.oldtimerange.Font = new System.Drawing.Font("MS UI Gothic", 13.8F);
+            this.oldtimerange.Location = new System.Drawing.Point(8, 99);
             this.oldtimerange.MinDate = new System.DateTime(2002, 1, 1, 0, 0, 0, 0);
             this.oldtimerange.Name = "oldtimerange";
+            this.oldtimerange.Size = new System.Drawing.Size(225, 30);
+            this.oldtimerange.TabIndex = 11;
             this.oldtimerange.Value = new System.DateTime(2016, 9, 10, 0, 0, 0, 0);
             this.oldtimerange.ValueChanged += new System.EventHandler(this.oldtimerange_ValueChanged);
             // 
             // rangelabel
             // 
-            resources.ApplyResources(this.rangelabel, "rangelabel");
+            this.rangelabel.Font = new System.Drawing.Font("MS UI Gothic", 13.8F);
+            this.rangelabel.Location = new System.Drawing.Point(168, 39);
             this.rangelabel.Name = "rangelabel";
+            this.rangelabel.Size = new System.Drawing.Size(198, 42);
+            this.rangelabel.TabIndex = 12;
+            this.rangelabel.Text = "集計範囲";
             // 
             // kara
             // 
-            resources.ApplyResources(this.kara, "kara");
+            this.kara.Font = new System.Drawing.Font("MS UI Gothic", 13.8F);
+            this.kara.Location = new System.Drawing.Point(239, 99);
             this.kara.Name = "kara";
+            this.kara.Size = new System.Drawing.Size(30, 15);
+            this.kara.TabIndex = 13;
+            this.kara.Text = "～";
             // 
             // newtimerange
             // 
-            resources.ApplyResources(this.newtimerange, "newtimerange");
+            this.newtimerange.Font = new System.Drawing.Font("MS UI Gothic", 13.8F);
+            this.newtimerange.Location = new System.Drawing.Point(286, 99);
             this.newtimerange.Name = "newtimerange";
+            this.newtimerange.Size = new System.Drawing.Size(200, 30);
+            this.newtimerange.TabIndex = 14;
             this.newtimerange.ValueChanged += new System.EventHandler(this.newtimerange_ValueChanged);
             // 
             // oldtextlabel
             // 
-            resources.ApplyResources(this.oldtextlabel, "oldtextlabel");
+            this.oldtextlabel.Font = new System.Drawing.Font("MS UI Gothic", 13.8F);
+            this.oldtextlabel.Location = new System.Drawing.Point(57, 66);
             this.oldtextlabel.Name = "oldtextlabel";
+            this.oldtextlabel.Size = new System.Drawing.Size(200, 30);
+            this.oldtextlabel.TabIndex = 15;
+            this.oldtextlabel.Text = "範囲(始点)";
             // 
             // newtimelabel
             // 
-            resources.ApplyResources(this.newtimelabel, "newtimelabel");
+            this.newtimelabel.Font = new System.Drawing.Font("MS UI Gothic", 13.8F);
+            this.newtimelabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.newtimelabel.Location = new System.Drawing.Point(317, 66);
             this.newtimelabel.Name = "newtimelabel";
+            this.newtimelabel.Size = new System.Drawing.Size(200, 30);
+            this.newtimelabel.TabIndex = 16;
+            this.newtimelabel.Text = "範囲(終点)";
             // 
             // denlist
             // 
@@ -170,35 +224,48 @@
             this.denname,
             this.valuecolumu,
             this.nouhincolumu});
-            resources.ApplyResources(this.denlist, "denlist");
+            this.denlist.Font = new System.Drawing.Font("MS UI Gothic", 12F);
             this.denlist.GridLines = true;
+            this.denlist.Location = new System.Drawing.Point(253, 214);
             this.denlist.Name = "denlist";
+            this.denlist.Size = new System.Drawing.Size(804, 248);
+            this.denlist.TabIndex = 17;
             this.denlist.UseCompatibleStateImageBehavior = false;
             this.denlist.View = System.Windows.Forms.View.Details;
             // 
             // denname
             // 
-            resources.ApplyResources(this.denname, "denname");
+            this.denname.Text = "商品名";
+            this.denname.Width = 370;
             // 
             // valuecolumu
             // 
-            resources.ApplyResources(this.valuecolumu, "valuecolumu");
+            this.valuecolumu.Text = "納品単価";
+            this.valuecolumu.Width = 120;
             // 
             // nouhincolumu
             // 
-            resources.ApplyResources(this.nouhincolumu, "nouhincolumu");
+            this.nouhincolumu.Text = "納品個数";
+            this.nouhincolumu.Width = 100;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.label1, "label1");
+            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 13.8F);
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(21, 213);
             this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(173, 43);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "集計伝票(詳細)";
             // 
             // home
             // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(1382, 555);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.denlist);
             this.Controls.Add(this.newtimelabel);
@@ -215,7 +282,12 @@
             this.Controls.Add(this.monthlabel);
             this.Controls.Add(this.manthBox);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "home";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.Text = "home";
             this.Load += new System.EventHandler(this.home_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

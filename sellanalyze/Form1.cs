@@ -314,6 +314,17 @@ namespace sellanalyze
             var info = denNO + " 日時 : " + reday() + " 取引先 : " + storename + "\n";
             return info;
         }
+        public bool existgoods(string gname)
+        {
+            foreach(goods s in line)
+            {
+                if (s.name.Equals(gname))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
         public string[][] relinelist()
         {
             var linelist = new string[line.Count()][];
