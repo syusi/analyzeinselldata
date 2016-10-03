@@ -51,6 +51,10 @@ namespace sellanalyze
             var meisr = new StreamReader(path + @"\turimei.txt", Encoding.GetEncoding("Shift_JIS"));
             var stosr = new StreamReader(path + @"\mtokui.txt", Encoding.GetEncoding("Shift_JIS"));
 
+            readber.Value = 0;
+            readber.Visible = true;
+            readber.Maximum = File.ReadAllLines(path + @"\turiden.txt", Encoding.GetEncoding("Shift_JIS")).Length;
+
             string[] denline;
             string[] meiline;
             string[] stoline;
@@ -71,6 +75,7 @@ namespace sellanalyze
                 if (denline[3].Substring(0, 10).CompareTo(recentday) > 0 || denline[3].Substring(0, 10).CompareTo(oldday) < 0)
                 {
                     denline = readAndSplit(densr);
+                    readber.PerformStep();
                     continue;
                 }
                 de = new Denpyou(denline);
@@ -88,6 +93,7 @@ namespace sellanalyze
                 denpyou.Add(de);
                 glist.Clear();
                 denline = readAndSplit(densr);
+                readber.PerformStep();
             }
             if (denpyou.Count() <= 0)
             {
@@ -115,6 +121,7 @@ namespace sellanalyze
                 changeview(denpyou[0]);
                 updownbutton.Value = 0;
                 updownbutton.Maximum = denpyou.Count - 1;
+                readber.Visible = false;
             }
 
         }

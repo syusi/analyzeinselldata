@@ -49,6 +49,7 @@
             this.valuecolumu = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.nouhincolumu = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
+            this.readber = new System.Windows.Forms.ProgressBar();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.updownbutton)).BeginInit();
             this.SuspendLayout();
@@ -259,6 +260,15 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "集計伝票(詳細)";
             // 
+            // readber
+            // 
+            this.readber.Location = new System.Drawing.Point(770, 78);
+            this.readber.Name = "readber";
+            this.readber.Size = new System.Drawing.Size(287, 36);
+            this.readber.Step = 1;
+            this.readber.TabIndex = 19;
+            this.readber.Visible = false;
+            // 
             // home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -266,6 +276,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1382, 555);
+            this.Controls.Add(this.readber);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.denlist);
             this.Controls.Add(this.newtimelabel);
@@ -319,6 +330,7 @@
         private System.Windows.Forms.ColumnHeader valuecolumu;
         private System.Windows.Forms.ColumnHeader nouhincolumu;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ProgressBar readber;
     }
 }
 
