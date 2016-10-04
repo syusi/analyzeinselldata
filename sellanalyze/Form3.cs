@@ -13,11 +13,13 @@ namespace sellanalyze
     public partial class Form3 : Form
     {
         List<goods> goodslist;
-        public Form3(List<Denpyou> den,string title)
+        home h;
+        public Form3(List<Denpyou> den, string title,home f1)
         {
             InitializeComponent();
-            Text = title+"のランキング";
-            rank.Text = title+"のランキング";
+            h = f1;
+            Text = title + "のランキング";
+            rank.Text = title + "のランキング";
             total(den);
             sortListnum();
             rankingNum();
@@ -55,14 +57,14 @@ namespace sellanalyze
         }
         public void sortListname()
         {
-            goodslist.Sort((g1,g2) => g1.name.CompareTo(g2.name));
+            goodslist.Sort((g1, g2) => g1.name.CompareTo(g2.name));
         }
         public void show()
         {
             ranklistView.Items.Clear();
             for (int i = 0; i < goodslist.Count; i++)
             {
-                ranklistView.Items.Add(new ListViewItem(new string[] {""+goodslist[i].value,goodslist[i].name,""+goodslist[i].num }));
+                ranklistView.Items.Add(new ListViewItem(new string[] { "" + goodslist[i].value, goodslist[i].name, "" + goodslist[i].num }));
             }
         }
         void rankingNum()
@@ -83,6 +85,11 @@ namespace sellanalyze
         {
             sortListname();
             show();
+        }
+
+        private void ranklistView_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
+        {
+            h.setgoodstext(e.Item.SubItems[1].Text);
         }
     }
 

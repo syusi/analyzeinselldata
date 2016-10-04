@@ -17,7 +17,7 @@ namespace sellanalyze
         string recentday;
         string oldday;
         List<Denpyou> denpyou = new List<Denpyou>();
-        List<string> goodslist = new List<string>();
+        List<string> goodsnamelist = new List<string>();
         public home()
         {
             InitializeComponent();
@@ -35,12 +35,28 @@ namespace sellanalyze
             oldtimerange.Value = new DateTime(dt.Year - 3, dt.Month, dt.Day);
             recentday = nowaday(dt.Year, dt.Month, dt.Day);
             oldday = nowaday(dt.Year - 3, dt.Month, dt.Day);
+
+            importgoods();
+            goodslistset("");
         }
         private void newFileOpen()
         {
             var f = new Form2();
             f.ShowDialog(this);
             f.Dispose();
+        }
+        private void importgoods()
+        {
+            var path = Properties.Settings.Default.Datapath;
+            var shosr = new StreamReader(path + @"\mshohin.txt", Encoding.GetEncoding("Shift_JIS"));
+            string[] sholine;
+
+            sholine = readAndSplit(shosr);
+            while (sholine != null)
+            {
+                goodsnamelist.Add(sholine[2]);
+                sholine = readAndSplit(shosr);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -148,7 +164,7 @@ namespace sellanalyze
             denlist.Items.Clear();
             analabel.Text = d.reinfo();
             var list = d.relinelist();
-            foreach(string[] l in list)
+            foreach (string[] l in list)
             {
                 denlist.Items.Add(new ListViewItem(l));
             }
@@ -182,7 +198,7 @@ namespace sellanalyze
                                select d;
                 if (selected.Count() != 0)
                 {
-                    Form3 f3 = new Form3(selected.ToList(),manthBox.Text);
+                    Form3 f3 = new Form3(selected.ToList(), manthBox.Text, this);
                     f3.Show();
                 }
                 else
@@ -213,7 +229,7 @@ namespace sellanalyze
                 string selectstore = ((Store)storeBox.SelectedItem).number;
                 if (selectstore.Equals("0"))
                 {
-                    Form3 f3 = new Form3(denpyou, storeBox.Text);
+                    Form3 f3 = new Form3(denpyou, storeBox.Text, this);
                     f3.Show();
                 }
                 else
@@ -223,9 +239,8 @@ namespace sellanalyze
                                    select d;
                     if (selected.Count() != 0)
                     {
-                        Form3 f3 = new Form3(selected.ToList(), storeBox.Text);
-                        f3.ShowDialog(this);
-                        f3.Dispose();
+                        Form3 f3 = new Form3(selected.ToList(), storeBox.Text, this);
+                        f3.Show();
                     }
                     else
                         analabel.Text = "該当するデータがありません";
@@ -238,14 +253,22 @@ namespace sellanalyze
         }
         private void goodslistset(string name)
         {
-
+            var exgoodsname = goodsnamelist.Where(g => g.Contains(name));
+            foreach (string s in exgoodsname)
+            {
+                goodsnamebox.Items.Add(s);
+            }
         }
-        private void home_Load(object sender, EventArgs e)
+
+        public void setgoodstext(string s)
         {
-
+            goodsTextbox.Text = s;
         }
 
-        
+        private void goodsnamebox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            setgoodstext((string)goodsnamebox.SelectedItem);
+        }
     }
     public class goods
     {
@@ -282,7 +305,7 @@ namespace sellanalyze
             this.number = s[0];
             this.name = s[4];
         }
-        public Store(string name,string num)
+        public Store(string name, string num)
         {
             this.number = num;
             this.name = name;
@@ -327,7 +350,7 @@ namespace sellanalyze
         }
         public bool existgoods(string gname)
         {
-            foreach(goods s in line)
+            foreach (goods s in line)
             {
                 if (s.name.Equals(gname))
                 {

@@ -50,6 +50,9 @@
             this.nouhincolumu = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.readber = new System.Windows.Forms.ProgressBar();
+            this.goodsnamebox = new System.Windows.Forms.ComboBox();
+            this.goodsTextbox = new System.Windows.Forms.TextBox();
+            this.goodshowButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.updownbutton)).BeginInit();
             this.SuspendLayout();
@@ -135,7 +138,7 @@
             this.pathchangemenu});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1382, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1332, 36);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -196,7 +199,7 @@
             this.newtimerange.Font = new System.Drawing.Font("MS UI Gothic", 13.8F);
             this.newtimerange.Location = new System.Drawing.Point(286, 99);
             this.newtimerange.Name = "newtimerange";
-            this.newtimerange.Size = new System.Drawing.Size(200, 30);
+            this.newtimerange.Size = new System.Drawing.Size(211, 30);
             this.newtimerange.TabIndex = 14;
             this.newtimerange.ValueChanged += new System.EventHandler(this.newtimerange_ValueChanged);
             // 
@@ -227,9 +230,9 @@
             this.nouhincolumu});
             this.denlist.Font = new System.Drawing.Font("MS UI Gothic", 12F);
             this.denlist.GridLines = true;
-            this.denlist.Location = new System.Drawing.Point(253, 214);
+            this.denlist.Location = new System.Drawing.Point(253, 213);
             this.denlist.Name = "denlist";
-            this.denlist.Size = new System.Drawing.Size(804, 248);
+            this.denlist.Size = new System.Drawing.Size(689, 248);
             this.denlist.TabIndex = 17;
             this.denlist.UseCompatibleStateImageBehavior = false;
             this.denlist.View = System.Windows.Forms.View.Details;
@@ -269,13 +272,45 @@
             this.readber.TabIndex = 19;
             this.readber.Visible = false;
             // 
+            // goodsnamebox
+            // 
+            this.goodsnamebox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.goodsnamebox.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.goodsnamebox.FormattingEnabled = true;
+            this.goodsnamebox.Location = new System.Drawing.Point(971, 282);
+            this.goodsnamebox.Name = "goodsnamebox";
+            this.goodsnamebox.Size = new System.Drawing.Size(309, 26);
+            this.goodsnamebox.Sorted = true;
+            this.goodsnamebox.TabIndex = 20;
+            this.goodsnamebox.SelectedIndexChanged += new System.EventHandler(this.goodsnamebox_SelectedIndexChanged);
+            // 
+            // goodsTextbox
+            // 
+            this.goodsTextbox.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.goodsTextbox.Location = new System.Drawing.Point(980, 377);
+            this.goodsTextbox.Name = "goodsTextbox";
+            this.goodsTextbox.Size = new System.Drawing.Size(276, 27);
+            this.goodsTextbox.TabIndex = 21;
+            // 
+            // goodshowButton
+            // 
+            this.goodshowButton.Location = new System.Drawing.Point(980, 477);
+            this.goodshowButton.Name = "goodshowButton";
+            this.goodshowButton.Size = new System.Drawing.Size(300, 42);
+            this.goodshowButton.TabIndex = 22;
+            this.goodshowButton.Text = "button1";
+            this.goodshowButton.UseVisualStyleBackColor = true;
+            // 
             // home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1382, 555);
+            this.ClientSize = new System.Drawing.Size(1332, 555);
+            this.Controls.Add(this.goodshowButton);
+            this.Controls.Add(this.goodsTextbox);
+            this.Controls.Add(this.goodsnamebox);
             this.Controls.Add(this.readber);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.denlist);
@@ -299,7 +334,6 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "home";
-            this.Load += new System.EventHandler(this.home_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.updownbutton)).EndInit();
@@ -331,6 +365,9 @@
         private System.Windows.Forms.ColumnHeader nouhincolumu;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ProgressBar readber;
+        private System.Windows.Forms.ComboBox goodsnamebox;
+        private System.Windows.Forms.TextBox goodsTextbox;
+        private System.Windows.Forms.Button goodshowButton;
     }
 }
 

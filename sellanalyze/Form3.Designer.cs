@@ -59,13 +59,16 @@
             this.sellnumcolumu});
             this.ranklistView.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.ranklistView.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.ranklistView.FullRowSelect = true;
             this.ranklistView.GridLines = true;
             this.ranklistView.Location = new System.Drawing.Point(0, 25);
+            this.ranklistView.MultiSelect = false;
             this.ranklistView.Name = "ranklistView";
             this.ranklistView.Size = new System.Drawing.Size(642, 430);
             this.ranklistView.TabIndex = 1;
             this.ranklistView.UseCompatibleStateImageBehavior = false;
             this.ranklistView.View = System.Windows.Forms.View.Details;
+            this.ranklistView.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.ranklistView_ItemSelectionChanged);
             // 
             // rankcolumu
             // 
@@ -88,7 +91,7 @@
             this.indexchangeMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.並び順を変えるToolStripMenuItem});
             this.indexchangeMenu.Name = "indexchangeMenu";
-            this.indexchangeMenu.Size = new System.Drawing.Size(230, 66);
+            this.indexchangeMenu.Size = new System.Drawing.Size(230, 38);
             // 
             // 並び順を変えるToolStripMenuItem
             // 
@@ -103,14 +106,14 @@
             // rankToolStripMenuItem
             // 
             this.rankToolStripMenuItem.Name = "rankToolStripMenuItem";
-            this.rankToolStripMenuItem.Size = new System.Drawing.Size(181, 34);
+            this.rankToolStripMenuItem.Size = new System.Drawing.Size(132, 34);
             this.rankToolStripMenuItem.Text = "順位";
             this.rankToolStripMenuItem.Click += new System.EventHandler(this.rankToolStripMenuItem_Click);
             // 
             // nameToolStripMenuItem
             // 
             this.nameToolStripMenuItem.Name = "nameToolStripMenuItem";
-            this.nameToolStripMenuItem.Size = new System.Drawing.Size(181, 34);
+            this.nameToolStripMenuItem.Size = new System.Drawing.Size(132, 34);
             this.nameToolStripMenuItem.Text = "名前";
             this.nameToolStripMenuItem.Click += new System.EventHandler(this.nameToolStripMenuItem_Click);
             // 
