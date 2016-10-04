@@ -269,6 +269,26 @@ namespace sellanalyze
         {
             setgoodstext((string)goodsnamebox.SelectedItem);
         }
+
+        private void goodssendButton_Click(object sender, EventArgs e)
+        {
+            List<ditaligoods> dtgoods = new List<ditaligoods>();
+            foreach(Denpyou d in denpyou)
+            {
+                ditaligoods dg = d.existgoods(goodsTextbox.Text);
+                if (dg != null)
+                    dtgoods.Add(dg);
+            }
+            if (dtgoods.Count > 0)
+            {
+                Goodsrank gr = new Goodsrank(dtgoods);
+                gr.Show();
+            }
+            else
+            {
+                analabel.Text = "該当する商品が見つかりません";
+            }
+        }
     }
     public class goods
     {
@@ -295,6 +315,22 @@ namespace sellanalyze
             return new string[] { name, value.ToString(), num.ToString() };
         }
 
+    }
+    public class ditaligoods : goods
+    {
+        public string storename { get; }
+        public int month { get; }
+        public ditaligoods(goods g,string stname,int m):base(g.name,g.num)
+        {
+            storename = stname;
+            month = m;
+        }
+        public ditaligoods(string n,int num,int m,string s):base(n,num)
+        {
+            storename = s;
+            month = m;
+        }
+        
     }
     public class Store
     {
@@ -348,16 +384,16 @@ namespace sellanalyze
             var info = denNO + " 日時 : " + reday() + " 取引先 : " + storename + "\n";
             return info;
         }
-        public bool existgoods(string gname)
+        public ditaligoods existgoods(string gname)
         {
             foreach (goods s in line)
             {
                 if (s.name.Equals(gname))
                 {
-                    return true;
+                    return new ditaligoods(s,this.storename,this.month);
                 }
             }
-            return false;
+            return null;
         }
         public string[][] relinelist()
         {

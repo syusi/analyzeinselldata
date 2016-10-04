@@ -48,11 +48,13 @@
             this.denname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.valuecolumu = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.nouhincolumu = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label1 = new System.Windows.Forms.Label();
+            this.denpyo = new System.Windows.Forms.Label();
             this.readber = new System.Windows.Forms.ProgressBar();
             this.goodsnamebox = new System.Windows.Forms.ComboBox();
             this.goodsTextbox = new System.Windows.Forms.TextBox();
-            this.goodshowButton = new System.Windows.Forms.Button();
+            this.goodssendButton = new System.Windows.Forms.Button();
+            this.allgoodsLabel = new System.Windows.Forms.Label();
+            this.selectgoodLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.updownbutton)).BeginInit();
             this.SuspendLayout();
@@ -252,16 +254,16 @@
             this.nouhincolumu.Text = "納品個数";
             this.nouhincolumu.Width = 100;
             // 
-            // label1
+            // denpyo
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 13.8F);
-            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(21, 213);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 43);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "集計伝票(詳細)";
+            this.denpyo.BackColor = System.Drawing.SystemColors.Control;
+            this.denpyo.Font = new System.Drawing.Font("MS UI Gothic", 13.8F);
+            this.denpyo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.denpyo.Location = new System.Drawing.Point(21, 213);
+            this.denpyo.Name = "denpyo";
+            this.denpyo.Size = new System.Drawing.Size(173, 43);
+            this.denpyo.TabIndex = 18;
+            this.denpyo.Text = "集計伝票(詳細)";
             // 
             // readber
             // 
@@ -277,7 +279,7 @@
             this.goodsnamebox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.goodsnamebox.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.goodsnamebox.FormattingEnabled = true;
-            this.goodsnamebox.Location = new System.Drawing.Point(971, 282);
+            this.goodsnamebox.Location = new System.Drawing.Point(971, 277);
             this.goodsnamebox.Name = "goodsnamebox";
             this.goodsnamebox.Size = new System.Drawing.Size(309, 26);
             this.goodsnamebox.Sorted = true;
@@ -287,32 +289,55 @@
             // goodsTextbox
             // 
             this.goodsTextbox.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.goodsTextbox.Location = new System.Drawing.Point(980, 377);
+            this.goodsTextbox.Location = new System.Drawing.Point(980, 412);
             this.goodsTextbox.Name = "goodsTextbox";
-            this.goodsTextbox.Size = new System.Drawing.Size(276, 27);
+            this.goodsTextbox.Size = new System.Drawing.Size(300, 27);
             this.goodsTextbox.TabIndex = 21;
             // 
-            // goodshowButton
+            // goodssendButton
             // 
-            this.goodshowButton.Location = new System.Drawing.Point(980, 477);
-            this.goodshowButton.Name = "goodshowButton";
-            this.goodshowButton.Size = new System.Drawing.Size(300, 42);
-            this.goodshowButton.TabIndex = 22;
-            this.goodshowButton.Text = "button1";
-            this.goodshowButton.UseVisualStyleBackColor = true;
+            this.goodssendButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.goodssendButton.Location = new System.Drawing.Point(980, 465);
+            this.goodssendButton.Name = "goodssendButton";
+            this.goodssendButton.Size = new System.Drawing.Size(300, 42);
+            this.goodssendButton.TabIndex = 22;
+            this.goodssendButton.Text = "商品分析";
+            this.goodssendButton.UseVisualStyleBackColor = true;
+            this.goodssendButton.Click += new System.EventHandler(this.goodssendButton_Click);
+            // 
+            // allgoodsLabel
+            // 
+            this.allgoodsLabel.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.allgoodsLabel.Location = new System.Drawing.Point(1017, 239);
+            this.allgoodsLabel.Name = "allgoodsLabel";
+            this.allgoodsLabel.Size = new System.Drawing.Size(263, 26);
+            this.allgoodsLabel.TabIndex = 23;
+            this.allgoodsLabel.Text = "すべての商品一覧";
+            // 
+            // selectgoodLabel
+            // 
+            this.selectgoodLabel.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.selectgoodLabel.Location = new System.Drawing.Point(1047, 368);
+            this.selectgoodLabel.Name = "selectgoodLabel";
+            this.selectgoodLabel.Size = new System.Drawing.Size(263, 26);
+            this.selectgoodLabel.TabIndex = 24;
+            this.selectgoodLabel.Text = "分析する商品";
             // 
             // home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1332, 555);
-            this.Controls.Add(this.goodshowButton);
+            this.Controls.Add(this.selectgoodLabel);
+            this.Controls.Add(this.allgoodsLabel);
+            this.Controls.Add(this.goodssendButton);
             this.Controls.Add(this.goodsTextbox);
             this.Controls.Add(this.goodsnamebox);
             this.Controls.Add(this.readber);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.denpyo);
             this.Controls.Add(this.denlist);
             this.Controls.Add(this.newtimelabel);
             this.Controls.Add(this.oldtextlabel);
@@ -328,11 +353,9 @@
             this.Controls.Add(this.monthlabel);
             this.Controls.Add(this.manthBox);
             this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "home";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "home";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -363,11 +386,13 @@
         private System.Windows.Forms.ColumnHeader denname;
         private System.Windows.Forms.ColumnHeader valuecolumu;
         private System.Windows.Forms.ColumnHeader nouhincolumu;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label denpyo;
         private System.Windows.Forms.ProgressBar readber;
         private System.Windows.Forms.ComboBox goodsnamebox;
         private System.Windows.Forms.TextBox goodsTextbox;
-        private System.Windows.Forms.Button goodshowButton;
+        private System.Windows.Forms.Button goodssendButton;
+        private System.Windows.Forms.Label allgoodsLabel;
+        private System.Windows.Forms.Label selectgoodLabel;
     }
 }
 

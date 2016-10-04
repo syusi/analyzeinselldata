@@ -2614,7 +2614,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1041</td><td>会社名</td><td>0</td><td/><td>1688497201</td></row>
+		<row><td>COMPANY_NAME</td><td>1041</td><td>Uekibati</td><td>0</td><td/><td>623121905</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1041</td><td>常にインストール</td><td>0</td><td/><td>1688497201</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1041</td><td>このｼｽﾃﾑの色設定では、[ProductName] を実行できません。</td><td>0</td><td/><td>1688497201</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION35</td><td>1033</td><td>Microsoft .NET Framework 3.5 needs to be installed for this installation to continue.</td><td>0</td><td/><td>-1666927626</td></row>
@@ -3717,8 +3717,8 @@
 		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1041</td><td>このプロセッサは、[ProductName] の実行に適切ではありません。</td><td>0</td><td/><td>1688497201</td></row>
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1041</td><td>RAM 容量が、[ProductName] の実行に適切ではありません。</td><td>0</td><td/><td>1688497201</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1041</td><td>画面の解像度が、[ProductName] の実行に適切ではありません。</td><td>0</td><td/><td>1688497201</td></row>
-		<row><td>ID_STRING1</td><td>1041</td><td>http://www.高知植木鉢センター（仮）.com</td><td>0</td><td/><td>1688497201</td></row>
-		<row><td>ID_STRING2</td><td>1041</td><td>高知植木鉢センター（仮）</td><td>0</td><td/><td>1688497201</td></row>
+		<row><td>ID_STRING1</td><td>1041</td><td>http://www.Uekibati.com</td><td>0</td><td/><td>623121905</td></row>
+		<row><td>ID_STRING2</td><td>1041</td><td>Uekibati</td><td>0</td><td/><td>623121905</td></row>
 		<row><td>ID_STRING3</td><td>1041</td><td>Launch |Built</td><td>0</td><td/><td>1688497201</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1041</td><td>{&amp;Tahoma9}この機能をアンインストールしたままにします。</td><td>0</td><td/><td>1688497201</td></row>
 	</table>
@@ -4343,7 +4343,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
 		<row><td>ProductCode</td><td>{FED57B8F-D725-4800-A386-7B095FD17B66}</td><td/></row>
 		<row><td>ProductName</td><td>営業分析ツール</td><td/></row>
-		<row><td>ProductVersion</td><td>1.2.3</td><td/></row>
+		<row><td>ProductVersion</td><td>2.0</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>
