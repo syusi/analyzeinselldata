@@ -63,10 +63,11 @@ namespace sellanalyze
         {
             denpyou.Clear();
             storeBox.Items.Clear();
+            GoodsYearBox.Items.Clear();
             var path = Properties.Settings.Default.Datapath;
-            var densr = new StreamReader(path + @"\turiden.txt", Encoding.GetEncoding("Shift_JIS"));
-            var meisr = new StreamReader(path + @"\turimei.txt", Encoding.GetEncoding("Shift_JIS"));
-            var stosr = new StreamReader(path + @"\mtokui.txt", Encoding.GetEncoding("Shift_JIS"));
+            var densr = new StreamReader(path + @"\turiden.txt", Encoding.GetEncoding("Shift_JIS"));// 伝票の情報
+            var meisr = new StreamReader(path + @"\turimei.txt", Encoding.GetEncoding("Shift_JIS"));// 伝票の明細
+            var stosr = new StreamReader(path + @"\mtokui.txt", Encoding.GetEncoding("Shift_JIS"));// 得意先の情報
 
             readber.Value = 0;
             readber.Visible = true;
@@ -96,7 +97,7 @@ namespace sellanalyze
                     continue;
                 }
                 de = new Denpyou(denline);
-                while (!denline[0].Equals(meiline[0]))
+                while (meiline != null && !denline[0].Equals(meiline[0]))
                 {
                     meiline = readAndSplit(meisr);
                 }
@@ -138,6 +139,13 @@ namespace sellanalyze
                 changeview(denpyou[0]);
                 updownbutton.Value = 0;
                 updownbutton.Maximum = denpyou.Count - 1;
+
+                GoodsYearBox.Items.Add("全ての年");
+                for(int i=oldtimerange.Value.Year; i<= newtimerange.Value.Year; i++)
+                {
+                    GoodsYearBox.Items.Add(i + "");
+                }
+                GoodsYearBox.SelectedIndex = 0;
                 readber.Visible = false;
             }
 
@@ -273,21 +281,57 @@ namespace sellanalyze
         private void goodssendButton_Click(object sender, EventArgs e)
         {
             List<ditaligoods> dtgoods = new List<ditaligoods>();
+            int year = 0;
+            if (GoodsYearBox.SelectedIndex != 0)
+            {
+                year = int.Parse((string)GoodsYearBox.SelectedItem);
+            }
+            
             foreach(Denpyou d in denpyou)
             {
+                if(year != 0 && d.year != year)
+                {
+                    continue;
+                }
                 ditaligoods dg = d.existgoods(goodsTextbox.Text);
                 if (dg != null)
                     dtgoods.Add(dg);
             }
             if (dtgoods.Count > 0)
             {
-                Goodsrank gr = new Goodsrank(dtgoods);
+                var path = Properties.Settings.Default.Datapath;
+                var tempSt = new StreamReader(path + @"\templature.txt", Encoding.GetEncoding("Shift_JIS"));
+                double[] tempnum = new double[13];
+                if(year != 0)
+                {
+                    string[] t = readAndSplit(tempSt);
+                    while (!t[0].Equals(year.ToString()))//年数が同じになるまでまわす。
+                    {
+                        t = readAndSplit(tempSt);
+                    }
+                    for(int i = 0; i < tempnum.Length; i++)
+                    {
+                        tempnum[i] = double.Parse(t[i]);
+                    }
+                }
+                else
+                {
+                    tempnum[0] = 0;
+                }
+                Goodsrank gr = new Goodsrank(dtgoods,tempnum);
                 gr.Show();
             }
             else
             {
                 analabel.Text = "該当する商品が見つかりません";
             }
+        }
+
+        private void denlist_ItemActivate(object sender, EventArgs e)
+        {
+            //意図していなかったが、項目のダブルクリックでこのイベントが発生するらしい
+            var item = ((ListView)sender).SelectedItems[0]; //最初に選択された物を取得
+            this.setgoodstext(item.Text);
         }
     }
     public class goods

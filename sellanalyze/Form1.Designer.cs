@@ -55,6 +55,8 @@
             this.goodssendButton = new System.Windows.Forms.Button();
             this.allgoodsLabel = new System.Windows.Forms.Label();
             this.selectgoodLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.GoodsYearBox = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.updownbutton)).BeginInit();
             this.SuspendLayout();
@@ -238,6 +240,7 @@
             this.denlist.TabIndex = 17;
             this.denlist.UseCompatibleStateImageBehavior = false;
             this.denlist.View = System.Windows.Forms.View.Details;
+            this.denlist.ItemActivate += new System.EventHandler(this.denlist_ItemActivate);
             // 
             // denname
             // 
@@ -279,7 +282,7 @@
             this.goodsnamebox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.goodsnamebox.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.goodsnamebox.FormattingEnabled = true;
-            this.goodsnamebox.Location = new System.Drawing.Point(971, 277);
+            this.goodsnamebox.Location = new System.Drawing.Point(971, 322);
             this.goodsnamebox.Name = "goodsnamebox";
             this.goodsnamebox.Size = new System.Drawing.Size(309, 26);
             this.goodsnamebox.Sorted = true;
@@ -308,20 +311,40 @@
             // allgoodsLabel
             // 
             this.allgoodsLabel.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.allgoodsLabel.Location = new System.Drawing.Point(1017, 239);
+            this.allgoodsLabel.Location = new System.Drawing.Point(1001, 293);
             this.allgoodsLabel.Name = "allgoodsLabel";
             this.allgoodsLabel.Size = new System.Drawing.Size(263, 26);
             this.allgoodsLabel.TabIndex = 23;
             this.allgoodsLabel.Text = "すべての商品一覧";
+            this.allgoodsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // selectgoodLabel
             // 
             this.selectgoodLabel.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.selectgoodLabel.Location = new System.Drawing.Point(1047, 368);
+            this.selectgoodLabel.Location = new System.Drawing.Point(1001, 383);
             this.selectgoodLabel.Name = "selectgoodLabel";
             this.selectgoodLabel.Size = new System.Drawing.Size(263, 26);
             this.selectgoodLabel.TabIndex = 24;
             this.selectgoodLabel.Text = "分析する商品";
+            this.selectgoodLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label1.Location = new System.Drawing.Point(1001, 230);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(263, 26);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "年数絞込み";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // GoodsYearBox
+            // 
+            this.GoodsYearBox.FormattingEnabled = true;
+            this.GoodsYearBox.Location = new System.Drawing.Point(1052, 259);
+            this.GoodsYearBox.Name = "GoodsYearBox";
+            this.GoodsYearBox.Size = new System.Drawing.Size(166, 23);
+            this.GoodsYearBox.TabIndex = 26;
             // 
             // home
             // 
@@ -331,6 +354,8 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1332, 555);
+            this.Controls.Add(this.GoodsYearBox);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.selectgoodLabel);
             this.Controls.Add(this.allgoodsLabel);
             this.Controls.Add(this.goodssendButton);
@@ -393,6 +418,8 @@
         private System.Windows.Forms.Button goodssendButton;
         private System.Windows.Forms.Label allgoodsLabel;
         private System.Windows.Forms.Label selectgoodLabel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox GoodsYearBox;
     }
 }
 
